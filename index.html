@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>NOTEBOOK</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAZELNOTE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="header">
+            <h1 class="app-title">HAZELNOTE</h1>
+            <button class="theme-toggle" id="theme-toggle">🌙</button>
+        </div>
+
+        <div class="features">
+            <div class="feature-box" id="create-edit">✅ Create & Edit Notes</div>
+            <div class="feature-box" id="search-feature">🔍 Search Notes</div>
+            <div class="feature-box" id="export-feature">📤 Export Notes</div>
+            <div class="feature-box" id="import-feature">📥 Import Notes</div>
+            <div class="feature-box" id="media-feature">🖼️ Add Media (Image, Audio, Video)</div>
+            <div class="feature-box" id="security-feature">🔒 Secure Notes with PIN</div>
+        </div>
+
+        <!-- Floating Action Button for Creating Notes -->
+        <button class="fab" id="fab">+</button>
+
+        <!-- Modal for Media Upload -->
+        <div id="media-modal" class="modal">
+            <div class="modal-content">
+                <h2>Select Media File</h2>
+                <input type="file" id="media-upload" accept="image/*,audio/*,video/*">
+                <button id="upload-media">Upload Media</button>
+            </div>
+        </div>
+
+        <!-- File Inputs for Importing Files -->
+        <input type="file" id="import-file-input" accept="application/json,image/*,audio/*,video/*" style="display:none;">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
